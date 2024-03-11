@@ -14,8 +14,9 @@ class ComponenteSerializer(serializers.ModelSerializer):
 class FichaSerializer(serializers.ModelSerializer):
     modelo = serializers.PrimaryKeyRelatedField(queryset=Modelo.objects.all())
     # modelo = ModeloSerializer(read_only=True)
-    componente = ComponenteSerializer(many=True, read_only=True)
+    componentes = ComponenteSerializer(many=True, read_only=True)
 
     class Meta:
         model=Ficha
-        fields=('imagen', 'descripcion', 'modelo', 'componente')
+        fields=('imagen', 'titulo', 'descripcion', 'modelo', 'componentes')
+        depth = 1

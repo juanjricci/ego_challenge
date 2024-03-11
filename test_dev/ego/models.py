@@ -37,9 +37,10 @@ class Componente(models.Model):
 
 class Ficha(models.Model):
     imagen = models.ImageField(upload_to='car_images')
+    titulo = models.CharField(max_length=200)
     descripcion = models.TextField()
     modelo = models.OneToOneField(Modelo, on_delete=models.CASCADE)
     componentes = models.ManyToManyField(Componente)
 
     def __str__(self):
-        return str(self.pk)
+        return self.modelo.modelo
