@@ -14,8 +14,12 @@ class ModeloView(viewsets.ModelViewSet):
     # e.g: http://127.0.0.1:8000/app/api/modelos/?ordering=precio
     ordering_fields = ['anio', 'precio']
     # filter by tipo
-    # e.g: http://127.0.0.1:8000/app/api/modelos/?ordering=precio
-    filterset_fields = ['tipo']
+    # e.g: http://127.0.0.1:8000/app/api/modelos/?tipo=AUTO
+    # for shared values
+    # e.g: http://127.0.0.1:8000/app/api/modelos/?tipo__in=SUV,CROSSOVER
+    filterset_fields = {
+        'tipo': ["in", "exact"],
+    }
 
 class ComponenteView(viewsets.ModelViewSet):
     serializer_class = ComponenteSerializer
