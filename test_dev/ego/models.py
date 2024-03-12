@@ -41,6 +41,12 @@ class Ficha(models.Model):
     descripcion = models.TextField()
     modelo = models.OneToOneField(Modelo, on_delete=models.CASCADE)
     componentes = models.ManyToManyField(Componente)
+    subtitulo = models.CharField(max_length=200)
+    descripcion_sub = models.TextField()
+    imagen_sub_url = models.URLField(max_length=200)
+    subtitulo_1 = models.CharField(max_length=200)
+    descripcion_sub_1 = models.TextField()
+    imagen_sub_1_url = models.URLField(max_length=200)
 
     def __str__(self):
         return self.modelo.modelo
