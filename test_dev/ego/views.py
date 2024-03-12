@@ -2,7 +2,7 @@ from rest_framework import viewsets, filters
 from .models import Modelo, Componente, Ficha
 from .serializers import ModeloSerializer, ComponenteSerializer, FichaSerializer
 from rest_framework.response import Response
-import json
+# import json
 from django_filters.rest_framework import DjangoFilterBackend
 
 
@@ -32,7 +32,7 @@ class FichaView(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         data = request.data
         new_ficha = Ficha.objects.create(
-            pk=data["pk"],
+            # pk=data["pk"],
             imagen_url=data["imagen_url"],
             titulo=data["titulo"],
             descripcion=data["descripcion"],
@@ -44,7 +44,8 @@ class FichaView(viewsets.ModelViewSet):
             descripcion_sub_1 = data["descripcion_sub_1"],
             imagen_sub_1_url = data["imagen_sub_1_url"],
         )
-        componentes = json.loads(data["componentes"])
+        # componentes = json.loads(data["componentes"])
+        componentes = data["componentes"]
         print(componentes)
 
         for componente in componentes:

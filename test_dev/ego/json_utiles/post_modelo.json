@@ -1,0 +1,7 @@
+{
+    "tipo": "PICKUP",
+    "modelo": "Hilux",
+    "anio": 2020,
+    "precio": "1507000.00",
+    "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/hilux.png"
+}
