@@ -20,7 +20,7 @@ class Modelo(models.Model):
     modelo = models.CharField(max_length=200)
     anio = models.IntegerField()
     precio = models.DecimalField(max_digits=19, decimal_places=2)
-    thumbnail = models.ImageField(upload_to='car_thumbnails', blank=True)
+    thumbnail_url = models.URLField(max_length=200)
 
     def __str__(self):
         # return str(self.pk)
@@ -29,14 +29,14 @@ class Modelo(models.Model):
 class Componente(models.Model):
     titulo = models.CharField(max_length=200)
     descripcion = models.TextField()
-    imagen = models.ImageField(upload_to='components_images')
+    imagen_url = models.URLField(max_length=200)
 
     def __str__(self):
         # return str(self.pk)
         return self.titulo
 
 class Ficha(models.Model):
-    imagen = models.ImageField(upload_to='car_images')
+    imagen_url = models.URLField(max_length=200)
     titulo = models.CharField(max_length=200)
     descripcion = models.TextField()
     modelo = models.OneToOneField(Modelo, on_delete=models.CASCADE)
