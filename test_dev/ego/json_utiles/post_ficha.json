@@ -2,7 +2,7 @@
     "imagen_url": "http://127.0.0.1:8000/ego/car_images/hilux_ficha.png",
     "titulo": "Preparada para cualquier desafío",
     "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit, euismod in turpis felis taciti ultricies molestie, urna vehicula viverra volutpat justo non. Leo curae sagittis cras vulputate gravida senectus ac felis himenaeos, porta egestas metus pellentesque sociosqu netus montes lacinia fames, duis sed vestibulum imperdiet condimentum lectus hendrerit non.",
-    "modelo": 1,
+    "modelo": "Hilux",
     "componentes": [
         {
             "titulo": "Nuevos motores Toyota"

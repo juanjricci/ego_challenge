@@ -11,12 +11,12 @@ class ModeloView(viewsets.ModelViewSet):
     queryset = Modelo.objects.all()
     filter_backends = [filters.OrderingFilter, DjangoFilterBackend]
     # sort by anio or precio
-    # e.g: http://127.0.0.1:8000/app/api/modelos/?ordering=precio
+    # e.g: http://127.0.0.1:8000/ego/api/modelos/?ordering=precio
     ordering_fields = ['anio', 'precio']
     # filter by tipo
-    # e.g: http://127.0.0.1:8000/app/api/modelos/?tipo=AUTO
+    # e.g: http://127.0.0.1:8000/ego/api/modelos/?tipo=AUTO
     # for shared values
-    # e.g: http://127.0.0.1:8000/app/api/modelos/?tipo__in=SUV,CROSSOVER
+    # e.g: http://127.0.0.1:8000/ego/api/modelos/?tipo__in=SUV,CROSSOVER
     filterset_fields = {
         'tipo': ["in", "exact"],
     }
@@ -36,7 +36,7 @@ class FichaView(viewsets.ModelViewSet):
             imagen_url=data["imagen_url"],
             titulo=data["titulo"],
             descripcion=data["descripcion"],
-            modelo=Modelo.objects.get(pk=data["modelo"]),
+            modelo=Modelo.objects.get(modelo=data["modelo"]),
             subtitulo = data["subtitulo"],
             descripcion_sub = data["descripcion_sub"],
             imagen_sub_url = data["imagen_sub_url"],

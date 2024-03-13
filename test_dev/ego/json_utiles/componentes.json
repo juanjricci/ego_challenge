@@ -18,5 +18,10 @@
         "titulo": "Transmisión automática",
         "descripcion": "Posibilidad de elección de caja automática de manejo.",
         "imagen_url": "http://127.0.0.1:8000/ego/components_images/trAuto.png"
+    },
+    {
+        "titulo": "Modos de conducción",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "imagen_url": "http://127.0.0.1:8000/ego/components_images/modo.png"
     }
 ]
