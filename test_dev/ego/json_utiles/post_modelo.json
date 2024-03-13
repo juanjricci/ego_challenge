@@ -1,7 +1,86 @@
-{
-    "tipo": "PICKUP",
-    "modelo": "Hilux",
-    "anio": 2020,
-    "precio": "1507000.00",
-    "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/hilux.png"
-}
+[
+    {
+        "tipo": "PICKUP",
+        "modelo": "Hilux",
+        "anio": 2020,
+        "precio": "1507000.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/hilux.png"
+    },
+    {
+        "tipo": "AUTO",
+        "modelo": "Etios",
+        "anio": 2019,
+        "precio": "815900.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/etios.png"
+    },
+    {
+        "tipo": "AUTO",
+        "modelo": "Yaris",
+        "anio": 2020,
+        "precio": "1038900.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/yaris.png"
+    },
+    {
+        "tipo": "AUTO",
+        "modelo": "Corolla",
+        "anio": 2018,
+        "precio": "1430700.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/corolla.png"
+    },
+    {
+        "tipo": "AUTO",
+        "modelo": "Prius",
+        "anio": 2019,
+        "precio": "2882000.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/prius.png"
+    },
+    {
+        "tipo": "AUTO",
+        "modelo": "Camry",
+        "anio": 2018,
+        "precio": "3753200.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/camry.png"
+    },
+    {
+        "tipo": "AUTO",
+        "modelo": "Toyota 86",
+        "anio": 2019,
+        "precio": "3812100.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/toyota_86.png"
+    },
+    {
+        "tipo": "CROSSOVER",
+        "modelo": "Innova",
+        "anio": 2020,
+        "precio": "2596400.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/innova.png"
+    },
+    {
+        "tipo": "CROSSOVER",
+        "modelo": "SW4",
+        "anio": 2019,
+        "precio": "3236200.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/sw4.png"
+    },
+    {
+        "tipo": "SUV",
+        "modelo": "RAV4",
+        "anio": 2019,
+        "precio": "3170200.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/rav4.png"
+    },
+    {
+        "tipo": "SUV",
+        "modelo": "Land Cruiser Prado",
+        "anio": 2017,
+        "precio": "815900.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/land_cruiser_prado.png"
+    },
+    {
+        "tipo": "SUV",
+        "modelo": "Land Cruiser 200",
+        "anio": 2018,
+        "precio": "7873100.00",
+        "thumbnail_url": "http://127.0.0.1:8000/ego/car_thumbnails/land_cruiser_200.png"
+    }
+]
