@@ -95,7 +95,7 @@ Filtra los modelos de tipo AUTO y los ordena por precio (ascendente):
 2. Hacer POST requests con los elementos del archivo `componentes.json`. 
 > Pueden ser actualizados o eliminados de la misma forma que los modelos.
 
-### Endpoint para administrar componentes
+### Endpoint para administrar fichas
 1. Ir a `http://127.0.0.1:8000/ego/api/fichas`.
 
 2. Hacer POST requests con los elementos del archivo `post_ficha.json`. (Utilizar la ventana `Raw data` para ingresar el json del archivo.)
